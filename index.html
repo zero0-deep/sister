@@ -69,7 +69,7 @@
             border-color: #60a5fa; 
         }
 
-        /* Embed Container */
+        /* Video/Iframe Container */
         .responsive-container {
             position: relative;
             overflow: hidden;
@@ -81,16 +81,27 @@
             position: absolute;
             top: 0;
             left: 0;
-            bottom: 0;
-            right: 0;
             width: 100%;
             height: 100%;
             border: none;
         }
 
+        /* පින්තූර සඳහා විශේෂ පෙනුම */
+        .photo-container {
+            width: 100%;
+            height: 250px; /* පින්තූරයේ උස */
+            overflow: hidden;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* පින්තූරය zoom නොවී රාමුවට ගැලපේ */
+            border: none;
+        }
+
         .label { padding: 15px; text-align: center; font-size: 14px; color: #94a3b8; }
 
-        /* Mobile Adjustments */
         @media (max-width: 600px) {
             .main-dp { width: 120px; height: 120px; }
             .profile-name { font-size: 1.5rem; }
@@ -124,29 +135,29 @@
         </div>
 
         <div class="media-card">
-            <div class="responsive-container">
-                <iframe src="https://drive.google.com/file/d/1USWVE1o3OLhkY2NBcLvnd_uG1o-EhK9o/preview"></iframe>
+            <div class="photo-container">
+                <img src="https://drive.google.com/uc?export=view&id=1USWVE1o3OLhkY2NBcLvnd_uG1o-EhK9o" alt="Photo 01">
             </div>
             <div class="label">High Quality Photo 01</div>
         </div>
 
         <div class="media-card">
-            <div class="responsive-container">
-                <iframe src="https://drive.google.com/file/d/1SAyCtC7fk6N3MSpyJDF-LwYkKlcifdAU/preview"></iframe>
+            <div class="photo-container">
+                <img src="https://drive.google.com/uc?export=view&id=1SAyCtC7fk6N3MSpyJDF-LwYkKlcifdAU" alt="Photo 02">
             </div>
             <div class="label">High Quality Photo 02</div>
         </div>
         
         <div class="media-card">
-            <div class="responsive-container">
-                <iframe src="https://drive.google.com/file/d/1SOr5sjNHL1_3ot8xtk3C025JdFCdPOMt/preview"></iframe>
+            <div class="photo-container">
+                <img src="https://drive.google.com/uc?export=view&id=1SOr5sjNHL1_3ot8xtk3C025JdFCdPOMt" alt="Photo 03">
             </div>
             <div class="label">High Quality Photo 03</div>
         </div>
-        
+
         <div class="media-card">
-            <div class="responsive-container">
-                <iframe src="https://drive.google.com/file/d/1o8Hefqpq7Uggoofd5DCrcSSI0ZMzukgl/preview"></iframe>
+            <div class="photo-container">
+                <img src="https://drive.google.com/uc?export=view&id=1o8Hefqpq7Uggoofd5DCrcSSI0ZMzukgl" alt="Photo 04">
             </div>
             <div class="label">High Quality Photo 04</div>
         </div>
@@ -155,7 +166,3 @@
 
 </body>
 </html>
-
-
-
-
